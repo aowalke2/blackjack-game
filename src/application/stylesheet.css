@@ -1,0 +1,103 @@
+.root{
+    -fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% ,#008000, #005a00);
+}
+
+#tableText1{
+    -fx-font-size: 60px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "white";
+    -fx-alignment: center;
+}
+
+#tableText2{
+    -fx-font-size: 36px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "white";
+    -fx-alignment: center;
+}
+
+#tableText3{
+    -fx-font-size: 60px;
+    -fx-font-family: "Times New Roman";
+    -fx-alignment: center;
+}
+
+#dealerCardTotalLabel{
+	-fx-font-size: 20px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "white";
+}
+
+#playerCardTotalLabel{
+	-fx-font-size: 20px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "white";
+}
+
+#playerNameLabel{
+	-fx-font-size: 20px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "white";    
+}
+
+#cashLabel{
+	-fx-font-size: 20px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "white";    
+}
+
+#betLabel{
+	-fx-font-size: 20px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "white";    
+}
+
+#insuranceBetLabel{
+	-fx-font-size: 20px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "white";    
+}
+
+#winLoseLabel{
+	-fx-font-size: 86px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "black";    
+}
+
+#dealerBlackjackOrBustLabel{
+	-fx-font-size: 30px;
+    -fx-font-family: "Times New Roman";    
+}
+
+#playerBlackjackOrBustLabel{
+	-fx-font-size: 30px;
+    -fx-font-family: "Times New Roman";    
+}
+
+#welcomeText{
+    -fx-font-size: 20px;
+    -fx-font-family: "Times New Roman";
+    -fx-alignment: center;
+}
+
+#gameText{
+    -fx-font-size: 70px;
+    -fx-font-family: "Times New Roman";
+    -fx-alignment: center;
+}
+
+#authorText{
+    -fx-font-size: 16px;
+    -fx-font-family: "Times New Roman";
+    -fx-alignment: center;
+}
+
+#startPlayerNameLabel{
+    -fx-font-size: 20px;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: "white";
+}
+
+.button{
+    -fx-font-family: "Times New Roman";
+}

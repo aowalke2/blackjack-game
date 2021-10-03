@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="gameTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <children>
+      <Text fx:id="tableText1" fill="WHITE" layoutX="-1.0" layoutY="147.0" lineSpacing="1.0" opacity="0.78" text="BLACKJACK PAYS 3 TO 2" textAlignment="CENTER" wrappingWidth="1920.0"> </Text>
+      <Text fx:id="tableText2" fill="WHITE" layoutY="189.0" lineSpacing="1.0" opacity="0.42" text="DEALER MUST HIT SOFT 17" textAlignment="CENTER" wrappingWidth="1920.0"> </Text>
+      <Text fx:id="tableText3" fill="#d3c823" layoutX="-1.0" layoutY="246.0" lineSpacing="1.0" opacity="0.78" text="INSURANCE PAYS 2 TO 1" textAlignment="CENTER" wrappingWidth="1920.0"> </Text>
+      <Circle fill="#ffffff00" layoutX="976.0" layoutY="865.0" opacity="0.64" radius="68.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+      <ImageView fitHeight="110.0" fitWidth="113.0" layoutX="919.0" layoutY="805.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Golden_star.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerCardTotalLabel" layoutX="449.0" layoutY="816.0" prefHeight="23.0" prefWidth="257.0" text="PLAYER CARD TOTAL:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="betLabel" layoutX="919.0" layoutY="854.0" text="BET:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="cashLabel" layoutX="730.0" layoutY="979.0" text="CASH:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="insuranceBetLabel" layoutX="1088.0" layoutY="854.0" prefHeight="23.0" prefWidth="178.0" text="INSURANCE BET:" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="dealerCardTotalLabel" layoutX="455.0" layoutY="353.0" prefHeight="23.0" prefWidth="246.0" text="DEALER CARD TOTAL:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="playerNameLabel" layoutX="730.0" layoutY="955.0" text="PLAYER NAME:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="betTextField" layoutX="861.0" layoutY="546.0" prefHeight="25.0" prefWidth="228.0" promptText="Place bet..." style="-fx-border-color: yellow; -fx-border-width: 4; -fx-border-radius: 2;" />
+      <Label fx:id="winLoseLabel" alignment="CENTER" layoutX="-1.0" layoutY="468.0" prefHeight="108.0" prefWidth="1920.0" text="YOU WIN!">
+         <font>
+            <Font size="86.0" />
+         </font>
+      </Label>
+      <Button fx:id="betButton" layoutX="943.0" layoutY="596.0" mnemonicParsing="false" onAction="#setUpTheGame" prefHeight="33.0" prefWidth="67.0" text="BET">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="doubleButton" layoutX="1425.0" layoutY="387.0" mnemonicParsing="false" onAction="#doubleHand" prefHeight="84.0" prefWidth="136.0" style="-fx-background-radius: 50; -fx-background-color: skyblue;" text="DOUBLE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button fx:id="hitButton" layoutX="1425.0" layoutY="487.0" mnemonicParsing="false" onAction="#hitHand" prefHeight="84.0" prefWidth="136.0" style="-fx-background-radius: 50; -fx-background-color: yellow;" text="HIT">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="standButton" layoutX="1425.0" layoutY="587.0" mnemonicParsing="false" onAction="#stand" prefHeight="84.0" prefWidth="136.0" style="-fx-background-radius: 50; -fx-background-color: pink;" text="STAND">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <ImageView fx:id="dealerCard1" fitHeight="177.0" fitWidth="136.0" layoutX="721.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dealerCard2" fitHeight="177.0" fitWidth="136.0" layoutX="823.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dealerCard3" fitHeight="177.0" fitWidth="136.0" layoutX="923.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dealerCard4" fitHeight="177.0" fitWidth="136.0" layoutX="1024.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dealerCard5" fitHeight="177.0" fitWidth="136.0" layoutX="1126.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dealerCard6" fitHeight="177.0" fitWidth="136.0" layoutX="1217.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard1" fitHeight="177.0" fitWidth="136.0" layoutX="720.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard2" fitHeight="177.0" fitWidth="136.0" layoutX="822.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard3" fitHeight="177.0" fitWidth="136.0" layoutX="922.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard4" fitHeight="177.0" fitWidth="136.0" layoutX="1023.0" layoutY="574.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard5" fitHeight="177.0" fitWidth="136.0" layoutX="1125.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerCard6" fitHeight="177.0" fitWidth="136.0" layoutX="1215.0" layoutY="609.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1_astronaut.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dealerBlackjackOrBustLabel" alignment="CENTER" layoutX="-1.0" layoutY="332.0" prefHeight="17.0" prefWidth="1920.0" text="BLACKJACK" />
+      <Label fx:id="playerBlackjackOrBustLabel" alignment="CENTER" layoutX="3.0" layoutY="588.0" prefHeight="17.0" prefWidth="1920.0" text="BLACKJACK" />
+      <Button fx:id="playAgainButton" layoutX="1425.0" layoutY="687.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="84.0" prefWidth="208.0" style="-fx-background-radius: 50; -fx-background-color: gray;" text="PLAY AGAIN?">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

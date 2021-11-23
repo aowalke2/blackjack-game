@@ -1,2 +1,2 @@
-# blackjack-game
+# Blackjack
 A blackjack game made with javafx.
